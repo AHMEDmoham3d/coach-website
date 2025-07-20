@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة اللاعب</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- شاشة تسجيل الدخول -->
+        <div id="login-screen" class="login-screen">
+            <div class="login-card">
+                <h1>🏆 مرحباً بك في أكاديمية الكابتن</h1>
+                <p>يرجى تسجيل الدخول للوصول إلى حسابك</p>
+                
+                <div class="login-form">
+                    <div class="form-group">
+                        <label for="login-player-id">معرف اللاعب</label>
+                        <input type="text" id="login-player-id" placeholder="مثال: player1">
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">كلمة المرور</label>
+                        <input type="password" id="login-password" placeholder="أدخل كلمة المرور">
+                    </div>
+                    <button onclick="playerLogin()" class="login-btn">دخول</button>
+                    <div id="login-error" class="login-error"></div>
+                </div>
+                
+                <div class="login-footer">
+                    <a href="/">&larr; العودة للصفحة الرئيسية</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- شاشة اللاعب الرئيسية -->
+        <div id="player-dashboard" class="player-dashboard" style="display: none;">
+            <header>
+                <div class="header-content">
+                    <h1>🏆 أكاديمية الكابتن</h1>
+                    <button onclick="logout()" class="logout-btn">تسجيل الخروج</button>
+                </div>
+                <div id="player-info" class="player-info">
+                    <!-- سيتم ملء معلومات اللاعب هنا -->
+                </div>
+            </header>
+
+            <main>
+                <!-- إحصائيات اللاعب -->
+                <section class="player-stats">
+                    <h2>📊 إحصائياتي</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3>النقاط</h3>
+                            <span id="player-points" class="stat-value">0</span>
+                        </div>
+                        <div class="stat-card">
+                            <h3>الغيابات</h3>
+                            <span id="player-absences" class="stat-value">0</span>
+                        </div>
+                        <div class="stat-card">
+                            <h3>الترتيب</h3>
+                            <span id="player-rank" class="stat-value">-</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="champion-section">
+                    <h2>🌟 بطل الأسبوع</h2>
+                    <div id="player-champion-display" class="champion-display">
+                        <!-- سيتم ملء بطل الأسبوع هنا -->
+                    </div>
+                </section>
+
+                <!-- بطل الأسبوع -->
+                <section class="champion-section">
+                    <h2>🌟 بطل الأسبوع</h2>
+                    <div id="player-champion-display" class="champion-display">
+                        <!-- سيتم ملء بطل الأسبوع هنا -->
+                    </div>
+                </section>
+
+                <!-- الرسائل -->
+                <section class="messages-section">
+                    <h2>💬 الرسائل مع المدرب</h2>
+                    <div class="chat-container">
+                        <div id="player-chat-messages" class="chat-messages">
+                            <!-- سيتم ملء الرسائل هنا -->
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" id="player-message-input" placeholder="اكتب رسالتك للمدرب...">
+                            <button onclick="sendPlayerMessage()">إرسال</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- المنشورات -->
+                <section class="posts-section">
+                    <h2>📢 منشورات المدرب</h2>
+                    <div id="player-posts-container" class="posts-container">
+                        <!-- سيتم ملء المنشورات هنا -->
+                    </div>
+                </section>
+
+                <!-- الترتيب العام -->
+                <section class="ranking-section">
+                    <h2>🏅 ترتيب جميع اللاعبين</h2>
+                    <div class="ranking-container">
+                        <div class="ranking-header">
+                            <span>الرانك</span>
+                            <span>اسم اللاعب</span>
+                            <span>النقاط</span>
+                            <span>الغيابات</span>
+                        </div>
+                        <div id="player-rankings" class="rankings-list">
+                            <!-- سيتم ملء الترتيب هنا -->
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <a href="/">&larr; العودة للصفحة الرئيسية</a>
+            </footer>
+        </div>
+    </div>
+
+    <script src="player.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+[
+  {
+    "id": "adam_hany",
+    "name": "ادم هانى",
+    "password": "adam123",
+    "points": 0,
+    "absences": 0,
+    "rank": 1
+  },
+  {
+    "id": "login_ahmed",
+    "name": "لوجين احمد",
+    "password": "login2024",
+    "points": 0,
+    "absences": 0,
+    "rank": 2
+  },
+  {
+    "id": "ahmed_atia",
+    "name": "احمد عطيه",
+    "password": "ahmed456",
+    "points": 0,
+    "absences": 0,
+    "rank": 3
+  },
+  {
+    "id": "retag_ahmed",
+    "name": "ريتاج احمد",
+    "password": "retag789",
+    "points": 0,
+    "absences": 0,
+    "rank": 4
+  },
+  {
+    "id": "omar_adel",
+    "name": "عمر عادل",
+    "password": "omar2024",
+    "points": 0,
+    "absences": 0,
+    "rank": 5
+  },
+  {
+    "id": "retag_mahmoud",
+    "name": "ريتاج محمود",
+    "password": "retag321",
+    "points": 0,
+    "absences": 0,
+    "rank": 6
+  },
+  {
+    "id": "judy_mahmoud",
+    "name": "جودى محمود",
+    "password": "judy654",
+    "points": 0,
+    "absences": 0,
+    "rank": 7
+  },
+  {
+    "id": "malak_ayman",
+    "name": "ملك ايمن",
+    "password": "malak987",
+    "points": 0,
+    "absences": 0,
+    "rank": 8
+  },
+  {
+    "id": "remas_tarek",
+    "name": "ريماس طارق",
+    "password": "remas147",
+    "points": 0,
+    "absences": 0,
+    "rank": 9
+  },
+  {
+    "id": "malak_mahmoud_sayed",
+    "name": "ملك محمود السيد",
+    "password": "malak258",
+    "points": 0,
+    "absences": 0,
+    "rank": 10
+  },
+  {
+    "id": "iten_fathy",
+    "name": "ايتن فتحى",
+    "password": "iten369",
+    "points": 0,
+    "absences": 0,
+    "rank": 11
+  },
+  {
+    "id": "mohamed_abdeltam",
+    "name": "محمد عبد التام",
+    "password": "mohamed741",
+    "points": 0,
+    "absences": 0,
+    "rank": 12
+  },
+  {
+    "id": "farah_adel",
+    "name": "فرح عادل",
+    "password": "farah852",
+    "points": 0,
+    "absences": 0,
+    "rank": 13
+  },
+  {
+    "id": "nada_anwar",
+    "name": "ندى انور",
+    "password": "nada963",
+    "points": 0,
+    "absences": 0,
+    "rank": 14
+  },
+  {
+    "id": "noreen_mahmoud",
+    "name": "نورين محمود",
+    "password": "noreen159",
+    "points": 0,
+    "absences": 0,
+    "rank": 15
+  },
+  {
+    "id": "sama_waleed",
+    "name": "سما وليد",
+    "password": "sama753",
+    "points": 0,
+    "absences": 0,
+    "rank": 16
+  },
+  {
+    "id": "rodina_islam",
+    "name": "رودينا اسلام",
+    "password": "rodina486",
+    "points": 0,
+    "absences": 0,
+    "rank": 17
+  },
+  {
+    "id": "nelly_mahmoud",
+    "name": "نيللى محمود",
+    "password": "nelly357",
+    "points": 0,
+    "absences": 0,
+    "rank": 18
+  },
+  {
+    "id": "taha_islam",
+    "name": "طه اسلام طه",
+    "password": "taha951",
+    "points": 0,
+    "absences": 0,
+    "rank": 19
+  },
+  {
+    "id": "adel_sabry",
+    "name": "عادل صبرى",
+    "password": "adel624",
+    "points": 0,
+    "absences": 0,
+    "rank": 20
+  },
+  {
+    "id": "mohamed_saeed",
+    "name": "محمد سعيد",
+    "password": "mohamed837",
+    "points": 0,
+    "absences": 0,
+    "rank": 21
+  },
+  {
+    "id": "افانان_عادل",
+    "name": "افانان عادل",
+    "password": "شبىشى101410",
+    "points": 0,
+    "absences": 0,
+    "rank": 22
+  }
+]

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة تحكم المدرب</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏆 لوحة تحكم المدرب</h1>
+            <nav>
+                <button class="nav-btn active" onclick="showSection('players')">إدارة اللاعبين</button>
+                <button class="nav-btn" onclick="showSection('posts')">المنشورات</button>
+                <button class="nav-btn" onclick="showSection('messages')">الرسائل</button>
+                <button class="nav-btn" onclick="showSection('champion')">بطل الأسبوع</button>
+            </nav>
+        </header>
+
+        <main>
+            <!-- إدارة اللاعبين -->
+            <section id="players-section" class="coach-section active">
+                <h2>👥 إدارة اللاعبين</h2>
+                
+                <div class="add-player-form">
+                    <h3>إضافة لاعب جديد</h3>
+                    <div class="form-group">
+                        <input type="text" id="new-player-name" placeholder="اسم اللاعب">
+                        <input type="password" id="new-player-password" placeholder="كلمة المرور (افتراضي: 123456)">
+                        <button onclick="addPlayer()">إضافة لاعب</button>
+                    </div>
+                </div>
+
+                <div class="players-list">
+                    <h3>قائمة اللاعبين</h3>
+                    <div id="players-container" class="players-container">
+                        <!-- سيتم ملء اللاعبين هنا -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- المنشورات -->
+            <section id="posts-section" class="coach-section">
+                <h2>📢 إدارة المنشورات</h2>
+                
+                <div class="post-form">
+                    <h3>إضافة منشور جديد</h3>
+                    <div class="form-group">
+                        <select id="post-type" onchange="togglePostFields()">
+                            <option value="text">نص</option>
+                            <option value="image">صورة</option>
+                            <option value="video">فيديو</option>
+                            <option value="youtube">يوتيوب</option>
+                            <option value="audio">تسجيل صوتي</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="post-content" placeholder="اكتب المحتوى هنا..."></textarea>
+                    </div>
+                    
+                    <div class="form-group" id="media-upload" style="display: none;">
+                        <input type="file" id="media-file" accept="image/*,video/*,audio/*">
+                    </div>
+                    
+                    <button onclick="addPost()">نشر</button>
+                </div>
+
+                <div class="posts-list">
+                    <h3>المنشورات السابقة</h3>
+                    <div id="coach-posts-container" class="posts-container">
+                        <!-- سيتم ملء المنشورات هنا -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- الرسائل -->
+            <section id="messages-section" class="coach-section">
+                <h2>💬 الرسائل</h2>
+                
+                <div class="messages-container">
+                    <div class="players-list-messages">
+                        <h3>اختر لاعب للمحادثة</h3>
+                        <div id="players-messages-list" class="players-messages-list">
+                            <!-- سيتم ملء قائمة اللاعبين هنا -->
+                        </div>
+                    </div>
+                    
+                    <div class="chat-container">
+                        <div class="chat-header">
+                            <span id="chat-player-name">اختر لاعب</span>
+                        </div>
+                        <div id="chat-messages" class="chat-messages">
+                            <!-- سيتم ملء الرسائل هنا -->
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" id="message-input" placeholder="اكتب رسالتك...">
+                            <button onclick="sendMessage()">إرسال</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- بطل الأسبوع -->
+            <section id="champion-section" class="coach-section">
+                <h2>🌟 بطل الأسبوع</h2>
+                
+                <div class="champion-form">
+                    <h3>اختيار بطل الأسبوع</h3>
+                    <div class="form-group">
+                        <select id="champion-select">
+                            <option value="">اختر اللاعب</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="file" id="champion-image" accept="image/*">
+                    </div>
+                    <button onclick="setChampion()">تعيين بطل الأسبوع</button>
+                </div>
+
+                <div class="current-champion">
+                    <h3>بطل الأسبوع الحالي</h3>
+                    <div id="current-champion-display" class="champion-display">
+                        <!-- سيتم ملء بطل الأسبوع هنا -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <a href="/">&larr; العودة للصفحة الرئيسية</a>
+        </footer>
+    </div>
+
+    <script src="coach.js"></script>
+</body>
+</html>
